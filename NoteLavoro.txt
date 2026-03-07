@@ -3,7 +3,7 @@ estratti 1000 libri dal materiale base, cartella "/Users/pt/Documents/verso\ Ita
 
 ho primiMilleLibri.xlsx che copio in primiMilleLibriWorking.xlsx di cui allargo le colonne per leggere le dide e cancello le colonne volume, illustr, data_crea
 
-lo passo a ChatGPT e chiedo di: estrarre dal file xlsx, libro per libro, cioè riga per rica, tutto il materiale utile per una ricerca bibliografica nei grandi cataloghi delle biblioteche adottando un formato che indichi, per ogni elemento, il campo di proveniena, es. autore, titolo, ecc. ecc. e salvalo libro per libro in un file csv
+lo passo a ChatGPT e chiedo di: estrarre dal file xlsx, libro per libro, cioè riga per riga, tutto il materiale utile per una ricerca bibliografica nei grandi cataloghi delle biblioteche adottando un formato che indichi, per ogni elemento, il campo di proveniena, es. autore, titolo, ecc. ecc. e salvalo libro per libro in un file csv
 
 Vedere https://chatgpt.com/share/69584cb5-fd0c-8013-bfa4-b1eadad43548
 c'è anche lo script Python riusabile; il file biblio_csv_per_libro.zip contiene i libri, uno per ogni file; il file biblio_longform_all_records.csv contiene tutti i libri in fila, ciascuno con i suoi campi; il punto di inizio è il campo n_scheda
@@ -14,7 +14,7 @@ Il programma deve funzionare in Jupyter anche come concatenazione tra più celle
 
 vedere https://chatgpt.com/share/6959abcc-287c-8013-a2a7-8b7190ae7fd2
 
-annoto che OPAC SBN WordCat sono simili, https://chatgpt.com/share/695c074c-08fc-8013-9772-057b18ec3cf2
+annoto che OPAC SBN e WordCat sono simili, https://chatgpt.com/share/695c074c-08fc-8013-9772-057b18ec3cf2
 
 preparo il file ricerca_corrispondenze.ipynb con le celle prodotte qui sopra 
 
@@ -39,7 +39,7 @@ salvo il risultato rinominando biblio_wide_records_enriched.csv a biblio_wide_re
 trova più corrispondenze, found=498 not_found=502,
 ma mai opac, gli ho chiesto di riscrivere il codice dell'unica cella in mondo che includa le varianti che propone per usare opac
 chatGPT fa il nuovo codice con
-le ndicazioni:
+le indicazioni:
 Se vuoi verificare “perché OPAC non trova”, lascia DEBUG_SBN = True: per ogni libro vedrai quante hit produce SBN per ciascuna variante (isbn, special, any).
 Se il log diventa troppo verboso, metti DEBUG_SBN = False.
 Se, dopo questo, SBN[special] hits=0 sistematicamente, la prossima cosa da fare è una cella di “smoke test” con una query manuale su OPAC dal tuo ambiente (per escludere blocchi di rete o rate-limit).
@@ -89,7 +89,7 @@ rischieste 6.1.26
 ERRORE ERRORE ERRORE
 rileggendo la mail a Panzanelli, Donà e GPZ del 20.2.25 h. 12:29 che contiene analisi e allegati sulla classificazione, scopro che sono partito dal file sbagliato, senza segnature
 
-riparto dal file libri_out_con_segnature.xlsx e produco pprimiMilleLibri.xlsx senza cancellare nulla
+*** riparto dal file libri_out_con_segnature.xlsx e produco primiMilleLibri.xlsx senza cancellare nulla
 
 chiedo a ChatGPT (lo script precedente è sparito, ora lo salvo)
 estrarre dal file xlsx, libro per libro, cioè riga per riga, tutto il materiale utile per una ricerca bibliografica nei grandi cataloghi delle biblioteche adottando un formato che indichi, per ogni elemento, il campo di proveniena, es. autore, titolo, ecc. ecc. e salvalo libro per libro in un file csv
