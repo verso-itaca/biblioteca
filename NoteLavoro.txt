@@ -161,10 +161,10 @@ produco icerca_corrispondenze_FIXED3.py
 
 nel Ryzen
 in progetti
-mkdir bibliotecaCottolengo
-cd bibliotecaCottolengo
 
 git clone https://github.com/verso-itaca/biblioteca.git
+
+ora ho la cartella biblioteca
 
 
 
