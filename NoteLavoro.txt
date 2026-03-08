@@ -92,9 +92,9 @@ rileggendo la mail a Panzanelli, Donà e GPZ del 20.2.25 h. 12:29 che contiene a
 *** riparto dal file libri_out_con_segnature.xlsx e produco primiMilleLibri.xlsx senza cancellare nulla
 
 chiedo a ChatGPT (lo script precedente è sparito, ora lo salvo)
-estrarre dal file xlsx, libro per libro, cioè riga per riga, tutto il materiale utile per una ricerca bibliografica nei grandi cataloghi delle biblioteche adottando un formato che indichi, per ogni elemento, il campo di proveniena, es. autore, titolo, ecc. ecc. e salvalo libro per libro in un file csv
+estrarre dal file xlsx, libro per libro, cioè riga per riga, tutto il materiale utile per una ricerca bibliografica nei grandi cataloghi delle biblioteche adottando un formato che indichi, per ogni elemento, il campo di provenienza, es. autore, titolo, ecc. ecc. e salvalo libro per libro in un file csv
 
-aggiunge inutili campi, rigenero e chiedo uno script per riuso e ottimo, invece di C nel nome campo vuoto originario, mette "noName"
+aggiunge inutili campi, rigenero e chiedo uno script per riuso con, invece di C nel nome campo vuoto originario, mette "noName"
 
 produce il file biblio_longform_all_records.csv e prepara uno script Python per fare la stessa operazione su altri xlsx con la stessa struttura, che salvo con nome
 xlsx_to_biblio_longform.py
@@ -140,7 +140,7 @@ uso temporaneamente prova2/ con l'archivio senza SBN e il nuovo index.html versi
 
 7.1.25
 
-ripartito SBN che era fermo, uso ricerca_corrispondenze_FIXED ma non trova nulla; ChatGPT mi chiarisce che per ripartire devo cancellare gli enriched e il json; faccio e riparte *****************
+ripartito SBN che era fermo, uso ricerca_corrispondenze_FIXED3 ma non trova nulla; ChatGPT mi chiarisce che per ripartire devo cancellare gli enriched e il json; faccio e riparte *****************
 
 ora in https://terna.github.io/biblioteca/prova/ c'è il catologo con solo 94 titoli non trovati, dai 724 iniziali
 
@@ -150,6 +150,14 @@ Fratel Luca Bianchini <fr.luca@cottolengo.org>
 Don Paolo Boggio <paoloboggio@cottolengo.org>
 
 8.1.26, nome => Biblioteca Santa Caterina da Siena e San Francesco, fondo storico del Cottolengo
+
+8.3.26
+da ricerca_corrispondenze_FIXED3.python
+
+con 
+jupyter nbconvert ricerca_corrispondenze_FIXED3.ipynb --to python
+produco
+
 
 
 

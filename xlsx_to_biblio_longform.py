@@ -1,7 +1,7 @@
 """
 xlsx_to_biblio_longform.py
 
-Converte un Excel (stessa struttura di primiMilleLibri.xlsx) in un CSV longform:
+Converte un Excel (stessa struttura di primiMilleLibri.xlsx ecc.) in un CSV longform:
 - una riga per ogni cella valorizzata
 - colonne: field, value
 - se l'intestazione di colonna è mancante, usa "noName" (anziché A, B, C, ...)
@@ -90,7 +90,7 @@ def xlsx_to_longform(in_xlsx: str, out_csv: str) -> None:
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Uso: python xlsx_to_biblio_longform.py input.xlsx output.csv")
+        print("Uso: python3 xlsx_to_biblio_longform.py input.xlsx output.csv")
         sys.exit(1)
 
     in_xlsx = sys.argv[1]
