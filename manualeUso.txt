@@ -12,10 +12,11 @@ ricerca_corrispondenze_FIXED3.ipynb opera su biblio_longform_all_records.csv
 
 ogni volta devo cancellare biblio_wide_records_enriched.csv dopo averlo aggiunto a quello che sta in /prova
 
+***
 ricordare 
 repast-on
 repast-off
-
+***
 
 8.3.26
 
@@ -37,7 +38,7 @@ rm biblio_longform_all_records_enriched.csv
 rm biblio_enrich_progress.json
 
 e lancio 
-nohup python3 ricerca_corrispondenze_FIXED3.py &
+nohup python3 ricerca_corrispondenze_FIXED3.py > out.txt &
 
 che usa automaticamente biblio_longform_all_records.csv
 

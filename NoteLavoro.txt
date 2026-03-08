@@ -171,7 +171,4 @@ controlla lavori in corso, più forte di jobs
 ps -u pietroterna -f
 
 
-
-
-
  
