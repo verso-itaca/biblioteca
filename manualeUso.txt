@@ -37,6 +37,10 @@ python3 ricerca_corrispondenze_FIXED3.py
 
 che usa automaticamente biblio_longform_all_records.csv
 
+ottengo 
+biblio_wide_records_enriched.csv
+che aggiungo a quello in /prova
+
 
 
 

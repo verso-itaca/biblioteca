@@ -156,8 +156,15 @@ da ricerca_corrispondenze_FIXED3.python
 
 con 
 jupyter nbconvert ricerca_corrispondenze_FIXED3.ipynb --to python
-produco
+produco icerca_corrispondenze_FIXED3.py
 
+
+nel Ryzen
+in progetti
+mkdir bibliotecaCottolengo
+cd bibliotecaCottolengo
+
+git clone https://github.com/verso-itaca/biblioteca.git
 
 
 
