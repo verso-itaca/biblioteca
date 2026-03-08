@@ -166,6 +166,10 @@ git clone https://github.com/verso-itaca/biblioteca.git
 
 ora ho la cartella biblioteca
 
+controlla lavori in corso, più forte di jobs
+
+ps -u pietroterna -f
+
 
 
 

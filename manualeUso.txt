@@ -12,6 +12,10 @@ ricerca_corrispondenze_FIXED3.ipynb opera su biblio_longform_all_records.csv
 
 ogni volta devo cancellare biblio_wide_records_enriched.csv dopo averlo aggiunto a quello che sta in /prova
 
+ricordare 
+repast-on
+repast-off
+
 
 8.3.26
 
