@@ -49,15 +49,23 @@ che aggiungo a quello in /prova
 usare cat file1.csv file2.csv > nuovo.csv
 attenzione, no sovrascritture, quindi
 rinomino entrambi i wide, vecchio e nuovo, con
-cat biblio_wide_records_enriched_old.csv biblio_wide_records_enriched_new.csv > biblio_wide_records_enriched.csv 
+cat (biblio_wide_records_enriched_old.csv; sed '1d' biblio_wide_records_enriched_new.csv) > biblio_wide_records_enriched.csv 
 
 
 9.3.26
 
 estraggo da libri_out_con_segnature.xlsx senza cancellare nulla, creando .xlsx da righe 4002-7001 aggiungendo i titoli di colonna
 
+rm biblio_longform_all_records.csv
 
+python3 xlsx_to_biblio_longform.py 4001-7000libri.xlsx biblio_longform_all_records.csv
 
+poi
 
+rm biblio_wide_records_enriched.csv
+rm biblio_longform_all_records_enriched.csv
+rm biblio_enrich_progress.json
 
+e lancio 
+nohup python3 ricerca_corrispondenze_FIXED3.py > out.txt &
 
