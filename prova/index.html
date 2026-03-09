@@ -1,4 +1,4 @@
-<!doctype html>
+x<!doctype html>
 <html lang="it">
 <head>
   <meta charset="utf-8" />
@@ -367,9 +367,10 @@
     }
 
     function loadCSV() {
+      const csvUrl = CSV_FILENAME + "?t=" + Date.now();
       document.getElementById("downloadBtn").setAttribute("href", CSV_FILENAME);
 
-      Papa.parse(CSV_FILENAME, {
+      Papa.parse(csvUrl, {
         download: true,
         header: true,
         skipEmptyLines: true,
