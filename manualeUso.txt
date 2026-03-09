@@ -47,6 +47,11 @@ biblio_wide_records_enriched.csv
 che aggiungo a quello in /prova
 
 
+9.3.26
+
+estraggo da libri_out_con_segnature.xlsx senza cancellare nulla, creando 4001-7000libri.xlsx da righe 4002-7001 aggiungendo i titoli di colonna
+
+
 
 
 

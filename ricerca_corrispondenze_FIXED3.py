@@ -1009,3 +1009,38 @@ df_wide = df_wide[cols]
 df_wide.to_csv(OUTPUT_WIDE, index=False)
 print(f"WIDE creato: {OUTPUT_WIDE} | righe={len(df_wide)} colonne={len(df_wide.columns)}")
 
+
+# ---------------------------
+# mail
+# ---------------------------
+
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+
+# Configurazione
+sender = "pietro.terna@gmail.com"
+receiver = "pietro.terna@unito.it"
+password = "dqxj ihqe icnn eppr" # Usa una Password per le App
+smtp_server = "smtp.gmail.com"
+port = 587
+
+# Creazione messaggio
+msg = MIMEMultipart()
+msg['From'] = sender
+msg['To'] = receiver
+msg['Subject'] = "fine programma"
+body = "Fine programma, avviso da Ryzen"
+msg.attach(MIMEText(body, 'plain'))
+
+# Invio
+try:
+    server = smtplib.SMTP(smtp_server, port)
+    server.starttls() # Criptazione
+    server.login(sender, password)
+    server.send_message(msg)
+    server.quit()
+    print("Email inviata con successo!")
+except Exception as e:
+    print(f"Errore: {e}")
+

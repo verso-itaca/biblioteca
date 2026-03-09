@@ -171,4 +171,5 @@ controlla lavori in corso, più forte di jobs
 ps -u pietroterna -f
 
 
+inserito in ricerca_corrispondenze_FIXED3.ipynb, e anche .py, un mail sender alla fine
  
