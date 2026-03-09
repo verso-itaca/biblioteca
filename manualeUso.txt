@@ -48,8 +48,9 @@ che aggiungo a quello in /prova
 
 usare cat file1.csv file2.csv > nuovo.csv
 attenzione, no sovrascritture, quindi
-rinomino entrambi i wide, vecchio e nuovo, con
-cat (biblio_wide_records_enriched_old.csv; sed '1d' biblio_wide_records_enriched_new.csv) > biblio_wide_records_enriched.csv 
+rinomino entrambi i wide, vecchio e nuovo, con old e new, poi
+cp biblio_wide_records_enriched_old.csv biblio_wide_records_enriched.csv
+sed '1d' biblio_wide_records_enriched_new.csv >> biblio_wide_records_enriched.csv
 
 
 9.3.26
@@ -68,4 +69,13 @@ rm biblio_enrich_progress.json
 
 e lancio 
 nohup python3 ricerca_corrispondenze_FIXED3.py > out.txt &
+
+ottengo 
+biblio_wide_records_enriched.csv
+che aggiungo a quello in /prova
+
+rinomino entrambi i wide, vecchio e nuovo, con old e new, poi
+cp biblio_wide_records_enriched_old.csv biblio_wide_records_enriched.csv
+sed '1d' biblio_wide_records_enriched_new.csv >> biblio_wide_records_enriched.csv
+
 
