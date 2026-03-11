@@ -113,6 +113,9 @@ rm biblio_longform_all_records.csv
 
 repast-on 
 python3 xlsx_to_biblio_longform.py 11001-16000libri.xlsx biblio_longform_all_records.csv
+NOOOO
+in realtà 7001-11000 again
+RIFATTO GIUSTO
 
 poi
 
@@ -120,14 +123,17 @@ rm biblio_wide_records_enriched.csv
 rm biblio_longform_all_records_enriched.csv
 rm biblio_enrich_progress.json
 
+12.3.26
 e lancio
 nohup python3 ricerca_corrispondenze_FIXED3.py > out.txt &
-*qui
+*qui pausa
 
 
 
 
-11.3.26
 
-estraggo da libri_out_con_segnature.xlsx senza cancellare nulla, creando .xlsx da righe 16002-21001 aggiungendo i titoli di colonna in 16001-21000libri.xlsx
+
+{11.3.26
+
+estraggo da libri_out_con_segnature.xlsx senza cancellare nulla, creando .xlsx da righe 16002-21001 aggiungendo i titoli di colonna in 16001-21000libri.xlsx}
 
