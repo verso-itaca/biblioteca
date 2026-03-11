@@ -112,7 +112,7 @@ estraggo da libri_out_con_segnature.xlsx senza cancellare nulla, creando .xlsx d
 rm biblio_longform_all_records.csv
 
 repast-on 
-python3 xlsx_to_biblio_longform.py 7001-11000libri.xlsx biblio_longform_all_records.csv
+python3 xlsx_to_biblio_longform.py 11001-16000libri.xlsx biblio_longform_all_records.csv
 
 poi
 
