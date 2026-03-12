@@ -128,12 +128,31 @@ e lancio
 nohup python3 ricerca_corrispondenze_FIXED3.py > out.txt &
 *qui pausa
 
+ottengo 
+biblio_wide_records_enriched.csv
+che aggiungo a quello in /prova
+
+rinomino entrambi i wide, vecchio e nuovo, con old e new, poi
+cp biblio_wide_records_enriched_old.csv biblio_wide_records_enriched.csv
+sed '1d' biblio_wide_records_enriched_new.csv >> biblio_wide_records_enriched.csv
 
 
-
-
-
-{11.3.26
+{ex 11.3.26}
 
 estraggo da libri_out_con_segnature.xlsx senza cancellare nulla, creando .xlsx da righe 16002-21001 aggiungendo i titoli di colonna in 16001-21000libri.xlsx}
 
+rm biblio_longform_all_records.csv
+
+repast-on 
+python3 xlsx_to_biblio_longform.py 16001-21000libri.xlsx biblio_longform_all_records.csv
+
+poi
+
+rm biblio_wide_records_enriched.csv
+rm biblio_longform_all_records_enriched.csv
+rm biblio_enrich_progress.json
+
+12.3.26
+e lancio
+nohup python3 ricerca_corrispondenze_FIXED3.py > out.txt &
+*qui pausa
