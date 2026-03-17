@@ -183,4 +183,15 @@ e lancio
 nohup python3 ricerca_corrispondenze_FIXED3.py > out.txt &
 *qui pausa
 
+18.3.26
+ottengo 
+biblio_wide_records_enriched.csv
+che aggiungo a quello in /prova
+
+rinomino entrambi i wide, vecchio e nuovo, con old e new, poi
+cp biblio_wide_records_enriched_old.csv biblio_wide_records_enriched.csv
+sed '1d' biblio_wide_records_enriched_new.csv >> biblio_wide_records_enriched.csv
+
+
+
 
