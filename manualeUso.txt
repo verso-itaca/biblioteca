@@ -170,5 +170,17 @@ estraggo da libri_out_con_segnature.xlsx senza cancellare nulla, creando .xlsx d
 
 rm biblio_longform_all_records.csv
 
+repast-on 
+python3 xlsx_to_biblio_longform.py 16001-21000libri.xlsx biblio_longform_all_records.csv
+
+poi
+
+rm biblio_wide_records_enriched.csv
+rm biblio_longform_all_records_enriched.csv
+rm biblio_enrich_progress.json
+
+e lancio
+nohup python3 ricerca_corrispondenze_FIXED3.py > out.txt &
+*qui pausa
 
 
