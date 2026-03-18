@@ -222,6 +222,13 @@ estraggo da libri_out_con_segnature.xlsx senza cancellare nulla, creando .xlsx d
 rm biblio_longform_all_records.csv
 
 repast-on 
+
+DISASTRO, NON HO FATTO 21001-26000 E 26001-31000
+
+DEVO RIPARTIRE CON old che sia 16001-21000
+
+poi pensare bene, sono QUI
+
 python3 xlsx_to_biblio_longform.py 16001-21000libri.xlsx biblio_longform_all_records.csv
 
 poi
