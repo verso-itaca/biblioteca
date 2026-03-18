@@ -225,9 +225,31 @@ repast-on
 
 DISASTRO, NON HO FATTO 21001-26000 E 26001-31000
 
-DEVO RIPARTIRE CON old che sia 16001-21000
+DEVO RIPARTIRE CON lo stato a 21000
 
 poi pensare bene, sono QUI
+
+devo ripartire recuperando il file prova/biblio_wide_records_enriched.csv del commit '21000 online'
+che ha hash b7df7fa
+
+git show d5b337c:prova/biblio_wide_records_enriched.csv > biblio_recuperato.csv
+risulta di 6249757 bytes
+
+lo mando in prova con 
+cp biblio_recuperato.csv prova/biblio_wide_records_enriched.csv
+e lo conservo
+
+commit
+
+
+
+
+
+
+
+
+
+
 
 python3 xlsx_to_biblio_longform.py 16001-21000libri.xlsx biblio_longform_all_records.csv
 
