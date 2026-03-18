@@ -240,17 +240,11 @@ cp biblio_recuperato.csv prova/biblio_wide_records_enriched.csv
 e lo conservo
 
 commit push
-risulta 
+risulta 21000
 
+ora il recupero del lavoro 21001-26000libri.xlsx che è già in Ryzen
 
-
-
-
-
-
-
-
-
+rm biblio_longform_all_records.csv
 
 python3 xlsx_to_biblio_longform.py 16001-21000libri.xlsx biblio_longform_all_records.csv
 
