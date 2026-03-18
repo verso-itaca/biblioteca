@@ -232,14 +232,15 @@ poi pensare bene, sono QUI
 devo ripartire recuperando il file prova/biblio_wide_records_enriched.csv del commit '21000 online'
 che ha hash b7df7fa
 
-git show d5b337c:prova/biblio_wide_records_enriched.csv > biblio_recuperato.csv
-risulta di 6249757 bytes
+git show b7df7fa:prova/biblio_wide_records_enriched.csv > biblio_recuperato.csv
+risulta di 8228639 bytes
 
 lo mando in prova con 
 cp biblio_recuperato.csv prova/biblio_wide_records_enriched.csv
 e lo conservo
 
-commit
+commit push
+risulta 
 
 
 
