@@ -274,6 +274,8 @@ ora il recupero del lavoro 26001-31000libri.xlsx che è già in Ryzen
 
 rm biblio_longform_all_records.csv
 
+repast-on
+
 python3 xlsx_to_biblio_longform.py 26001-31000libri.xlsx biblio_longform_all_records.csv
 
 poi
