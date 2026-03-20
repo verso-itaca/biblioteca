@@ -266,7 +266,7 @@ rinomino entrambi i wide, vecchio e nuovo, con old e new, poi
 cp biblio_wide_records_enriched_old.csv biblio_wide_records_enriched.csv
 sed '1d' biblio_wide_records_enriched_new.csv >> biblio_wide_records_enriched.csv
 
-pull
+push
 
 risulta 26000
 
@@ -288,6 +288,35 @@ e lancio
 nohup python3 ricerca_corrispondenze_FIXED3.py > out.txt &
 *qui pausa
 
+20.3.26
 
+ottengo 
+biblio_wide_records_enriched.csv
+che aggiungo a quello in /prova
+
+rinomino entrambi i wide, vecchio e nuovo, con old e new, poi
+cp biblio_wide_records_enriched_old.csv biblio_wide_records_enriched.csv
+sed '1d' biblio_wide_records_enriched_new.csv >> biblio_wide_records_enriched.csv
+
+push
+
+risulta 31000
+
+ora il recupero del lavoro 31001-40000libri.xlsx che è già in Ryzen
+
+rm biblio_longform_all_records.csv
+
+repast-on
+python3 xlsx_to_biblio_longform.py 31001-40000libri.xlsx biblio_longform_all_records.csv
+
+poi
+
+rm biblio_wide_records_enriched.csv
+rm biblio_longform_all_records_enriched.csv
+rm biblio_enrich_progress.json
+
+e lancio
+nohup python3 ricerca_corrispondenze_FIXED3.py > out.txt &
+*qui pausa
 
 
