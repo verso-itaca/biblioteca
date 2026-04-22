@@ -1,0 +1,15 @@
+Fondo bibliotecario storico del Cottolengo e catalogo per la futura Biblioteca Santa Caterina da Siena e San Francesco, Pietro Terna, aprile 2026
+
+La modernizzazione del catalogo del patrimonio bibliotecario storico del Cottolengo ha l'obiettivo non solo di completare la catalogazione, ma soprattutto di valorizzarlo attraverso strumenti digitali aggiornati e collegamenti ai principali repertori bibliografici nazionali e internazionali.
+
+A partire da un file contenente le registrazioni di circa  45.000 volumi, opera di straordinario valore di un volontario, si è operato inizialmente su un campione di 1.000 record, come banco di prova metodologico. 
+
+L'obiettivo è stato duplice: completare la descrizione bibliografica di ciascun volume e associare, ove possibile, un collegamento a un catalogo esterno in cui l'opera sia schedata secondo standard bibliografici riconosciuti. A tal fine è stato sviluppato un programma in Python [ricerca_corrispondenze_FIXED3.py] che interroga in modo automatico una sequenza di cataloghi, secondo una strategia "a cascata". Si parte da OPAC SBN, che garantisce una copertura particolarmente adeguata per il reperimento di opere italiane tra fine Ottocento e inizio Novecento; in caso di esito negativo si passa a Open Library, quindi al catalogo della Library of Congress, e infine a Internet Archive. Questa procedura consente di massimizzare la qualit… dei risultati, privilegiando i repertori più affidabili e strutturati.
+
+Parallelamente, è stato realizzato un sistema di consultazione digitale in JavaScript [index.html] che consente una ricerca immediata e flessibile nel catalogo rielaborato. Il motore permette ricerche per autore, titolo e altri campi, con possibilit… di attivare una modalit… rigorosa di interrogazione per restringere i risultati e distinguere tra ricerca sui soli campi originari o sull?intero insieme dei dati arricchiti. In ciascun record è presente il collegamento diretto al catalogo esterno in cui il volume è stato individuato, rafforzando così l'affidabilità scientifica della scheda e lìintegrazione con il sistema bibliografico nazionale e internazionale.
+
+Il lavoro svolto non rappresenta soltanto un miglioramento tecnico del catalogo, ma un passaggio significativo nella valorizzazione del patrimonio librario storico. L'integrazione con repertori standardizzati aumenta la riconoscibilit… delle opere, facilita eventuali ricerche accademiche, rende possibile una più agevole citazione bibliografica e apre la strada ad analisi quantitative e tematiche sull'intero fondo. 
+
+In sintesi, la modernizzazione del catalogo costituisce un?azione concreta di valorizzazione del patrimonio bibliotecario storico del Cottolengo: da elenco interno parzialmente lacunoso a sistema informativo integrato, verificabile e aperto agli standard delle reti bibliografiche nazionali e internazionali.
+
+Il catalogo del fondo storico è interrogabile all'indirizzo https://verso-itaca.github.io/biblioteca/catalogo/ 
